@@ -24,20 +24,20 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4a-Vt-zVn" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWq-Pf-0tb">
-                                        <rect key="frame" x="20" y="58" width="561" height="295"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWq-Pf-0tb">
+                                        <rect key="frame" x="74" y="58" width="454" height="295"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLL-hA-TxT">
+                                        <rect key="frame" x="-211" y="10" width="1023" height="295"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=compact" misplaced="YES">
-                                            <rect key="frame" x="74" y="-105" width="454" height="295"/>
+                                            <rect key="frame" x="-211" y="8" width="1023" height="295"/>
                                         </variation>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLL-hA-TxT">
-                                        <rect key="frame" x="20" y="10" width="561" height="295"/>
-                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
-                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
@@ -52,16 +52,40 @@
                         </subviews>
                         <color key="backgroundColor" red="0.2901960784" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="Kcn-ys-7vo" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="9uK-Mj-cuh"/>
                             <constraint firstItem="Kcn-ys-7vo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ff5-Qp-sb9"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="L4a-Vt-zVn" secondAttribute="bottom" id="LVr-eq-dsa"/>
+                            <constraint firstItem="Kcn-ys-7vo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Nx8-U7-qXD"/>
                             <constraint firstItem="L4a-Vt-zVn" firstAttribute="top" secondItem="Kcn-ys-7vo" secondAttribute="bottom" constant="20" id="Ult-p3-oxd"/>
+                            <constraint firstItem="L4a-Vt-zVn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="bfd-Tw-dyw"/>
                             <constraint firstItem="Kcn-ys-7vo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="c0J-EU-GtU"/>
+                            <constraint firstItem="Kcn-ys-7vo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="fEh-Zy-bRm"/>
                             <constraint firstItem="L4a-Vt-zVn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iUh-y4-x1l"/>
                             <constraint firstItem="L4a-Vt-zVn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="315" id="kmH-Ac-hLV"/>
                             <constraint firstAttribute="trailing" secondItem="L4a-Vt-zVn" secondAttribute="trailing" id="thC-9f-eoN"/>
                             <constraint firstItem="L4a-Vt-zVn" firstAttribute="leading" secondItem="Kcn-ys-7vo" secondAttribute="leading" id="xjh-9V-Avy"/>
                             <constraint firstItem="Kcn-ys-7vo" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="ytU-Nz-pWR"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9uK-Mj-cuh"/>
+                                <exclude reference="Nx8-U7-qXD"/>
+                                <exclude reference="fEh-Zy-bRm"/>
+                                <exclude reference="bfd-Tw-dyw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="9uK-Mj-cuh"/>
+                                <exclude reference="Ff5-Qp-sb9"/>
+                                <include reference="Nx8-U7-qXD"/>
+                                <exclude reference="c0J-EU-GtU"/>
+                                <include reference="fEh-Zy-bRm"/>
+                                <exclude reference="ytU-Nz-pWR"/>
+                                <exclude reference="Ult-p3-oxd"/>
+                                <include reference="bfd-Tw-dyw"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

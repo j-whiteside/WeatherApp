@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,13 +18,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kcn-ys-7vo">
-                                <rect key="frame" x="150" y="20" width="300" height="265"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Kcn-ys-7vo">
+                                <rect key="frame" x="0.0" y="20" width="600" height="197"/>
                             </imageView>
-                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L4a-Vt-zVn" userLabel="TextContainer">
-                                <rect key="frame" x="150" y="315" width="300" height="265"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4a-Vt-zVn" userLabel="TextContainer">
+                                <rect key="frame" x="0.0" y="237" width="600" height="363"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="28C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWq-Pf-0tb">
+                                        <rect key="frame" x="20" y="58" width="561" height="295"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=compact" misplaced="YES">
+                                            <rect key="frame" x="74" y="-105" width="454" height="295"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLL-hA-TxT">
+                                        <rect key="frame" x="20" y="10" width="561" height="295"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" red="0.21568627450980393" green="0.50196078431372548" blue="0.72941176470588232" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" label="Text"/>
+                                <constraints>
+                                    <constraint firstItem="hWq-Pf-0tb" firstAttribute="centerX" secondItem="L4a-Vt-zVn" secondAttribute="centerX" id="C62-0e-X7I"/>
+                                    <constraint firstItem="DLL-hA-TxT" firstAttribute="top" secondItem="L4a-Vt-zVn" secondAttribute="top" constant="10" id="I2S-Fs-d8X"/>
+                                    <constraint firstAttribute="bottom" secondItem="hWq-Pf-0tb" secondAttribute="bottom" constant="10" id="OZf-AN-heK"/>
+                                    <constraint firstItem="DLL-hA-TxT" firstAttribute="centerX" secondItem="L4a-Vt-zVn" secondAttribute="centerX" id="y4T-tB-6Fl"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.2901960784" green="0.6705882353" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -33,7 +57,10 @@
                             <constraint firstItem="L4a-Vt-zVn" firstAttribute="top" secondItem="Kcn-ys-7vo" secondAttribute="bottom" constant="20" id="Ult-p3-oxd"/>
                             <constraint firstItem="Kcn-ys-7vo" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="c0J-EU-GtU"/>
                             <constraint firstItem="L4a-Vt-zVn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iUh-y4-x1l"/>
+                            <constraint firstItem="L4a-Vt-zVn" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="315" id="kmH-Ac-hLV"/>
                             <constraint firstAttribute="trailing" secondItem="L4a-Vt-zVn" secondAttribute="trailing" id="thC-9f-eoN"/>
+                            <constraint firstItem="L4a-Vt-zVn" firstAttribute="leading" secondItem="Kcn-ys-7vo" secondAttribute="leading" id="xjh-9V-Avy"/>
+                            <constraint firstItem="Kcn-ys-7vo" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="ytU-Nz-pWR"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -41,4 +68,7 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Cloud" width="300" height="197"/>
+    </resources>
 </document>

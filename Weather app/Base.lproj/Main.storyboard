@@ -24,19 +24,25 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L4a-Vt-zVn" userLabel="TextContainer">
                                 <rect key="frame" x="0.0" y="237" width="600" height="363"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWq-Pf-0tb">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="28C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hWq-Pf-0tb">
                                         <rect key="frame" x="74" y="58" width="454" height="295"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="150"/>
+                                        </variation>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cupertino" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DLL-hA-TxT">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cupertino" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="DLL-hA-TxT">
                                         <rect key="frame" x="-211" y="10" width="1023" height="295"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="250"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=compact" misplaced="YES">
                                             <rect key="frame" x="-211" y="8" width="1023" height="295"/>
+                                        </variation>
+                                        <variation key="widthClass=compact">
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="90"/>
                                         </variation>
                                     </label>
                                 </subviews>
@@ -46,6 +52,8 @@
                                     <constraint firstItem="hWq-Pf-0tb" firstAttribute="centerX" secondItem="L4a-Vt-zVn" secondAttribute="centerX" id="C62-0e-X7I"/>
                                     <constraint firstItem="DLL-hA-TxT" firstAttribute="top" secondItem="L4a-Vt-zVn" secondAttribute="top" constant="10" id="I2S-Fs-d8X"/>
                                     <constraint firstAttribute="bottom" secondItem="hWq-Pf-0tb" secondAttribute="bottom" constant="10" id="OZf-AN-heK"/>
+                                    <constraint firstItem="DLL-hA-TxT" firstAttribute="width" secondItem="L4a-Vt-zVn" secondAttribute="width" id="PFB-Bc-xtO"/>
+                                    <constraint firstItem="hWq-Pf-0tb" firstAttribute="width" secondItem="L4a-Vt-zVn" secondAttribute="width" id="iBO-D6-XNJ"/>
                                     <constraint firstItem="DLL-hA-TxT" firstAttribute="centerX" secondItem="L4a-Vt-zVn" secondAttribute="centerX" id="y4T-tB-6Fl"/>
                                 </constraints>
                             </view>
